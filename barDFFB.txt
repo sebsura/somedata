@@ -1,0 +1,810 @@
+Fatal: Unhandled exception 0xc0000005
+Backtrace:
+
+	at Z11FindOneFileP16JobControlRecordP15FindFilesPacketPFiS0_S2_bEPcjb in F:\Bareos\libbareosfind.dll@0x6396 (addr=0x7ffff68d735c, disp=0x3a)
+	at Z12CheckChangesP16JobControlRecordP15FindFilesPacket in F:\Bareos\libbareosfind.dll@0x5ffa (addr=0x7ffff68d618c, disp=0xe6e)
+	at Z11FindOneFileP16JobControlRecordP15FindFilesPacketPFiS0_S2_bEPcjb in F:\Bareos\libbareosfind.dll@0x6781 (addr=0x7ffff68d735c, disp=0x425)
+	at Z9FindFilesP16JobControlRecordP15FindFilesPacketPFiS0_S2_bES4_ in F:\Bareos\libbareosfind.dll@0x6e3f (addr=0x7ffff68d7a81, disp=0x3be)
+	at ZN10filedaemon24BlastDataToStorageDaemonEP16JobControlRecordPc15crypto_cipher_t in F:\Bareos\bareos-fd.exe@0xcb43 (addr=0x7ff6852ad91a, disp=0x229)
+	at ZN10filedaemon28StopConnectToDirectorThreadsEb in F:\Bareos\bareos-fd.exe@0x1630b (addr=0x7ff6852b2cc9, disp=0x4642)
+	at ZN10filedaemon25process_director_commandsEP16JobControlRecordP12BareosSocket in F:\Bareos\bareos-fd.exe@0x111e9 (addr=0x7ff6852b1ff4, disp=0x1f5)
+	at ZN10filedaemon26handle_director_connectionEP12BareosSocket in F:\Bareos\bareos-fd.exe@0x11684 (addr=0x7ff6852b25a9, disp=0xdb)
+	at ZN10filedaemon16StopDirHeartbeatEP16JobControlRecord in F:\Bareos\bareos-fd.exe@0x18f69 (addr=0x7ff6852b9c48, disp=0x321)
+	at ZSt13__invoke_implIPvRPFS0_P19ConfigurationParserS0_EJS2_S0_EET_St14__invoke_otherOT0_DpOT1_ in F:\Bareos\bareos-fd.exe@0x76ffa (addr=0x7ff685317fb0, disp=0x4a)
+	at ZSt10__invoke_rIPvRPFS0_P19ConfigurationParserS0_EJS2_S0_EENSt9enable_ifIX16is_invocable_r_vIT_T0_DpT1_EES7_E4typeEOS8_DpOS9_ in F:\Bareos\bareos-fd.exe@0x75040 (addr=0x7ff685315ff0, disp=0x50)
+	at ZNSt17_Function_handlerIFPvP19ConfigurationParserS0_EPS3_E9_M_invokeERKSt9_Any_dataOS2_OS0_ in F:\Bareos\bareos-fd.exe@0x67d7d (addr=0x7ff685308d30, disp=0x4d)
+	at ZNKSt8functionIFPvP19ConfigurationParserS0_EEclES2_S0_ in F:\Bareos\libbareos.dll@0xbca2f (addr=0x7fff78f2d9d0, disp=0x5f)
+	at ZN10ThreadList33ShutdownAndWaitForThreadsToFinishEv in F:\Bareos\libbareos.dll@0x3efee (addr=0x7fff78eafeb6, disp=0x138)
+	at ZSt13__invoke_implIvPFvSt10shared_ptrI19ThreadListContainerERKSt8functionIFPvP19ConfigurationParserS4_EES6_S4_S0_I18IsRunningConditionEEJS2_S8_S6_S4_SC_EET_St14__invoke_otherOT0_DpOT1_ in F:\Bareos\libbareos.dll@0x10d315 (addr=0x7fff78f7e270, disp=0xa5)
+	at ZSt8__invokeIPFvSt10shared_ptrI19ThreadListContainerERKSt8functionIFPvP19ConfigurationParserS4_EES6_S4_S0_I18IsRunningConditionEEJS2_S8_S6_S4_SC_EENSt15__invoke_resultIT_JDpT0_EE4typeEOSG_DpOSH_ in F:\Bareos\libbareos.dll@0x116a87 (addr=0x7fff78f879f0, disp=0x97)
+	at ZNSt6thread8_InvokerISt5tupleIJPFvSt10shared_ptrI19ThreadListContainerERKSt8functionIFPvP19ConfigurationParserS6_EES8_S6_S2_I18IsRunningConditionEES4_SA_S8_S6_SE_EEE9_M_invokeIJLy0ELy1ELy2ELy3ELy4ELy5EEEEvSt12_Index_tupleIJXspT_EEE in F:\Bareos\libbareos.dll@0xe1e57 (addr=0x7fff78f52da0, disp=0xb7)
+	at ZNSt6thread8_InvokerISt5tupleIJPFvSt10shared_ptrI19ThreadListContainerERKSt8functionIFPvP19ConfigurationParserS6_EES8_S6_S2_I18IsRunningConditionEES4_SA_S8_S6_SE_EEEclEv in F:\Bareos\libbareos.dll@0xe1ea7 (addr=0x7fff78f52e90, disp=0x17)
+	at ZNSt6thread11_State_implINS_8_InvokerISt5tupleIJPFvSt10shared_ptrI19ThreadListContainerERKSt8functionIFPvP19ConfigurationParserS7_EES9_S7_S3_I18IsRunningConditionEES5_SB_S9_S7_SF_EEEEE6_M_runEv in F:\Bareos\libbareos.dll@0xe1adc (addr=0x7fff78f52ac0, disp=0x1c)
+	at atomic_flag_test_and_set_explicit in F:\Bareos\libstdc++-6.dll@0x113911 (addr=0x7ffffaab4770, disp=0x1a1)
+	at pthread_create_wrapper in F:\Bareos\libwinpthread-1.dll@0x3d63 (addr=0x7ff805804c30, disp=0x133)
+	at beginthreadex in C:\Windows\System32\msvcrt.dll@0x39f5a (addr=0x7ff80a30ae30, disp=0x12a)
+	at endthreadex in C:\Windows\System32\msvcrt.dll@0x3a02c (addr=0x7ff80a30af80, disp=0xac)
+	at BaseThreadInitThunk in C:\Windows\System32\KERNEL32.DLL@0x16614 (addr=0x7ff809f77600, disp=0x14)
+	at RtlUserThreadStart in C:\Windows\SYSTEM32\ntdll.dll@0x516f1 (addr=0x7ff80ab826d0, disp=0x21)
+
+Loaded Modules:
+
+"F:\Bareos\bareos-fd.exe" {
+	{name=".text", start=0x0x7ff6852a1000, size=0x7fa80},
+	{name=".data", start=0x0x7ff685321000, size=0x2c60},
+	{name=".rdata", start=0x0x7ff685324000, size=0x11794},
+	{name=".pdata", start=0x0x7ff685336000, size=0xb49c},
+	{name=".xdata", start=0x0x7ff685342000, size=0xde44},
+	{name=".bss", start=0x0x7ff685350000, size=0x1600},
+	{name=".edata", start=0x0x7ff685352000, size=0x56bac},
+	{name=".idata", start=0x0x7ff6853a9000, size=0xa1e4},
+	{name=".CRT", start=0x0x7ff6853b4000, size=0x68},
+	{name=".tls", start=0x0x7ff6853b5000, size=0x10},
+	{name=".reloc", start=0x0x7ff6853b6000, size=0x73c},
+	{name="/4", start=0x0x7ff6853b7000, size=0xed50},
+	{name="/19", start=0x0x7ff6853c6000, size=0x4d428e},
+	{name="/31", start=0x0x7ff68589b000, size=0x1f974},
+	{name="/45", start=0x0x7ff6858bb000, size=0x487b1},
+	{name="/57", start=0x0x7ff685904000, size=0x3fea8},
+	{name="/70", start=0x0x7ff685944000, size=0x16786},
+	{name="/81", start=0x0x7ff68595b000, size=0x668},
+	{name="/92", start=0x0x7ff68595c000, size=0x150},
+	{name="/106", start=0x0x7ff68595d000, size=0x328a0},
+	{name="/122", start=0x0x7ff685990000, size=0x22a7721},
+	{name="/135", start=0x0x7ff687c38000, size=0xa16c},
+}
+"C:\Windows\SYSTEM32\ntdll.dll" {
+	{name=".text", start=0x0x7ff80ab31000, size=0x11924e},
+	{name="RT", start=0x0x7ff80ac4b000, size=0x1f9},
+	{name="PAGE", start=0x0x7ff80ac4c000, size=0x432},
+	{name=".rdata", start=0x0x7ff80ac4d000, size=0x48041},
+	{name=".data", start=0x0x7ff80ac96000, size=0xb538},
+	{name=".pdata", start=0x0x7ff80aca2000, size=0xe4fc},
+	{name=".mrdata", start=0x0x7ff80acb1000, size=0x3520},
+	{name=".00cfg", start=0x0x7ff80acb5000, size=0x8},
+	{name=".rsrc", start=0x0x7ff80acb6000, size=0x70508},
+	{name=".reloc", start=0x0x7ff80ad27000, size=0x548},
+}
+"C:\Windows\System32\verifier.dll" {
+	{name=".text", start=0x0x7ffffcaa1000, size=0x28cb9},
+	{name=".rdata", start=0x0x7ffffcaca000, size=0x93de},
+	{name=".data", start=0x0x7ffffcad4000, size=0x1a5c8},
+	{name=".pdata", start=0x0x7ffffcaef000, size=0x1e54},
+	{name=".rsrc", start=0x0x7ffffcaf1000, size=0x21060},
+	{name=".reloc", start=0x0x7ffffcb13000, size=0x65c},
+}
+"C:\Windows\System32\KERNEL32.DLL" {
+	{name=".text", start=0x0x7ff809f61000, size=0x7ea4b},
+	{name=".rdata", start=0x0x7ff809fe0000, size=0x3322e},
+	{name=".data", start=0x0x7ff80a014000, size=0x12cc},
+	{name=".pdata", start=0x0x7ff80a016000, size=0x5634},
+	{name=".didat", start=0x0x7ff80a01c000, size=0x68},
+	{name=".rsrc", start=0x0x7ff80a01d000, size=0x520},
+	{name=".reloc", start=0x0x7ff80a01e000, size=0x314},
+}
+"C:\Windows\System32\KERNELBASE.dll" {
+	{name=".text", start=0x0x7ff808471000, size=0x1327fd},
+	{name=".rdata", start=0x0x7ff8085a4000, size=0x181c7c},
+	{name=".data", start=0x0x7ff808726000, size=0x4a30},
+	{name=".pdata", start=0x0x7ff80872b000, size=0xfa08},
+	{name=".didat", start=0x0x7ff80873b000, size=0x6e8},
+	{name=".rsrc", start=0x0x7ff80873c000, size=0x548},
+	{name=".reloc", start=0x0x7ff80873d000, size=0x28ad4},
+}
+"C:\Windows\System32\ADVAPI32.dll" {
+	{name=".text", start=0x0x7ff80a221000, size=0x684e7},
+	{name=".rdata", start=0x0x7ff80a28a000, size=0x364f6},
+	{name=".data", start=0x0x7ff80a2c1000, size=0x4542},
+	{name=".pdata", start=0x0x7ff80a2c6000, size=0x43ec},
+	{name=".didat", start=0x0x7ff80a2cb000, size=0x468},
+	{name=".rsrc", start=0x0x7ff80a2cc000, size=0x5c8},
+	{name=".reloc", start=0x0x7ff80a2cd000, size=0x1908},
+}
+"C:\Windows\System32\msvcrt.dll" {
+	{name=".text", start=0x0x7ff80a2d1000, size=0x746d1},
+	{name=".rdata", start=0x0x7ff80a346000, size=0x18cc0},
+	{name=".data", start=0x0x7ff80a35f000, size=0x7c00},
+	{name=".pdata", start=0x0x7ff80a367000, size=0x465c},
+	{name=".rsrc", start=0x0x7ff80a36c000, size=0x3f0},
+	{name=".reloc", start=0x0x7ff80a36d000, size=0x4a8},
+}
+"F:\Bareos\libbareos.dll" {
+	{name=".text", start=0x0x7fff78e71000, size=0x11e710},
+	{name=".data", start=0x0x7fff78f90000, size=0x1a60},
+	{name=".rdata", start=0x0x7fff78f92000, size=0x1813c},
+	{name=".pdata", start=0x0x7fff78fab000, size=0x1be64},
+	{name=".xdata", start=0x0x7fff78fc7000, size=0x21b14},
+	{name=".bss", start=0x0x7fff78fe9000, size=0x3050},
+	{name=".edata", start=0x0x7fff78fed000, size=0xd7cce},
+	{name=".idata", start=0x0x7fff790c5000, size=0x7d08},
+	{name=".CRT", start=0x0x7fff790cd000, size=0x58},
+	{name=".tls", start=0x0x7fff790ce000, size=0x10},
+	{name=".reloc", start=0x0x7fff790cf000, size=0xa88},
+	{name="/4", start=0x0x7fff790d0000, size=0x26cd0},
+	{name="/19", start=0x0x7fff790f7000, size=0x86c51b},
+	{name="/31", start=0x0x7fff79964000, size=0x41722},
+	{name="/45", start=0x0x7fff799a6000, size=0xbfe46},
+	{name="/57", start=0x0x7fff79a66000, size=0xab318},
+	{name="/70", start=0x0x7fff79b12000, size=0x23f7e},
+	{name="/81", start=0x0x7fff79b36000, size=0x94d},
+	{name="/92", start=0x0x7fff79b37000, size=0x110},
+	{name="/106", start=0x0x7fff79b38000, size=0x9c016},
+	{name="/122", start=0x0x7fff79bd5000, size=0x7359c9f},
+	{name="/135", start=0x0x7fff80f2f000, size=0x19e8a},
+}
+"F:\Bareos\libbareosfastlz.dll" {
+	{name=".text", start=0x0x7ffffcc11000, size=0x16178},
+	{name=".data", start=0x0x7ffffcc28000, size=0x80},
+	{name=".rdata", start=0x0x7ffffcc29000, size=0xb80},
+	{name=".pdata", start=0x0x7ffffcc2a000, size=0x8a0},
+	{name=".xdata", start=0x0x7ffffcc2b000, size=0x7cc},
+	{name=".bss", start=0x0x7ffffcc2c000, size=0x110},
+	{name=".edata", start=0x0x7ffffcc2d000, size=0xaa8},
+	{name=".idata", start=0x0x7ffffcc2e000, size=0x438},
+	{name=".CRT", start=0x0x7ffffcc2f000, size=0x58},
+	{name=".tls", start=0x0x7ffffcc30000, size=0x10},
+	{name=".reloc", start=0x0x7ffffcc31000, size=0x60},
+	{name="/4", start=0x0x7ffffcc32000, size=0x140},
+	{name="/19", start=0x0x7ffffcc33000, size=0xb0fa},
+	{name="/31", start=0x0x7ffffcc3f000, size=0x12cc},
+	{name="/45", start=0x0x7ffffcc41000, size=0x69f7},
+	{name="/57", start=0x0x7ffffcc48000, size=0x2380},
+	{name="/70", start=0x0x7ffffcc4b000, size=0x3ea},
+	{name="/81", start=0x0x7ffffcc4c000, size=0x94d},
+	{name="/92", start=0x0x7ffffcc4d000, size=0x110},
+	{name="/106", start=0x0x7ffffcc4e000, size=0xafe},
+	{name="/122", start=0x0x7ffffcc4f000, size=0x1cba3},
+	{name="/135", start=0x0x7ffffcc6c000, size=0x4df},
+}
+"C:\Windows\System32\sechost.dll" {
+	{name=".text", start=0x0x7ff80a0a1000, size=0x64b91},
+	{name=".rdata", start=0x0x7ff80a106000, size=0x276fa},
+	{name=".data", start=0x0x7ff80a12e000, size=0x37a8},
+	{name=".pdata", start=0x0x7ff80a132000, size=0x4410},
+	{name=".didat", start=0x0x7ff80a137000, size=0x120},
+	{name=".rsrc", start=0x0x7ff80a138000, size=0x12b8},
+	{name=".reloc", start=0x0x7ff80a13a000, size=0x1474},
+}
+"C:\Windows\System32\RPCRT4.dll" {
+	{name=".text", start=0x0x7ff80a421000, size=0xda646},
+	{name=".ndr64", start=0x0x7ff80a4fc000, size=0x6c54},
+	{name=".rdata", start=0x0x7ff80a503000, size=0x2b112},
+	{name=".data", start=0x0x7ff80a52f000, size=0x1958},
+	{name=".pdata", start=0x0x7ff80a531000, size=0xcb4c},
+	{name=".didat", start=0x0x7ff80a53e000, size=0x288},
+	{name=".rsrc", start=0x0x7ff80a53f000, size=0x4560},
+	{name=".reloc", start=0x0x7ff80a544000, size=0x17c8},
+}
+"C:\Windows\System32\ole32.dll" {
+	{name=".text", start=0x0x7ff809cc1000, size=0xcb0d4},
+	{name=".rdata", start=0x0x7ff809d8d000, size=0x313fe},
+	{name=".data", start=0x0x7ff809dbf000, size=0x2030},
+	{name=".pdata", start=0x0x7ff809dc2000, size=0xdfd4},
+	{name=".didat", start=0x0x7ff809dd0000, size=0x6c8},
+	{name=".rsrc", start=0x0x7ff809dd1000, size=0x15ab0},
+	{name=".reloc", start=0x0x7ff809de7000, size=0x2158},
+}
+"C:\Windows\System32\OLEAUT32.dll" {
+	{name=".text", start=0x0x7ff808b91000, size=0x947f9},
+	{name=".rdata", start=0x0x7ff808c26000, size=0x25784},
+	{name=".data", start=0x0x7ff808c4c000, size=0x22d0},
+	{name=".pdata", start=0x0x7ff808c4f000, size=0x8ee0},
+	{name=".didat", start=0x0x7ff808c58000, size=0x1c0},
+	{name=".rsrc", start=0x0x7ff808c59000, size=0x7a8},
+	{name=".reloc", start=0x0x7ff808c5a000, size=0x298c},
+}
+"C:\Windows\System32\ucrtbase.dll" {
+	{name=".text", start=0x0x7ff808211000, size=0xb3920},
+	{name=".rdata", start=0x0x7ff8082c5000, size=0x3914e},
+	{name=".data", start=0x0x7ff8082ff000, size=0x26f4},
+	{name=".pdata", start=0x0x7ff808302000, size=0xb688},
+	{name=".rsrc", start=0x0x7ff80830e000, size=0x410},
+	{name=".reloc", start=0x0x7ff80830f000, size=0xaf8},
+}
+"C:\Windows\System32\msvcp_win.dll" {
+	{name=".text", start=0x0x7ff808a81000, size=0x53f7e},
+	{name=".rdata", start=0x0x7ff808ad5000, size=0x3b9b6},
+	{name=".data", start=0x0x7ff808b11000, size=0x37e0},
+	{name=".pdata", start=0x0x7ff808b15000, size=0x4cf8},
+	{name=".didat", start=0x0x7ff808b1a000, size=0x40},
+	{name=".rsrc", start=0x0x7ff808b1b000, size=0x410},
+	{name=".reloc", start=0x0x7ff808b1c000, size=0x7e4},
+}
+"C:\Windows\System32\combase.dll" {
+	{name=".text", start=0x0x7ff80a551000, size=0x2331b4},
+	{name=".proxy", start=0x0x7ff80a785000, size=0x4e0d},
+	{name=".rdata", start=0x0x7ff80a78a000, size=0xc5914},
+	{name=".data", start=0x0x7ff80a850000, size=0x5fdc},
+	{name=".pdata", start=0x0x7ff80a856000, size=0x2aba0},
+	{name=".didat", start=0x0x7ff80a881000, size=0x668},
+	{name=".rsrc", start=0x0x7ff80a882000, size=0x13d38},
+	{name=".reloc", start=0x0x7ff80a896000, size=0xd81c},
+}
+"C:\Windows\System32\GDI32.dll" {
+	{name=".text", start=0x0x7ff809e61000, size=0xf035},
+	{name=".rdata", start=0x0x7ff809e71000, size=0x13dbe},
+	{name=".data", start=0x0x7ff809e85000, size=0x958},
+	{name=".pdata", start=0x0x7ff809e86000, size=0x1110},
+	{name=".didat", start=0x0x7ff809e88000, size=0x11e0},
+	{name=".rsrc", start=0x0x7ff809e8a000, size=0x3d8},
+	{name=".reloc", start=0x0x7ff809e8b000, size=0x4bc},
+}
+"C:\Windows\System32\win32u.dll" {
+	{name=".text", start=0x0x7ff808a01000, size=0xa4c2},
+	{name=".rdata", start=0x0x7ff808a0c000, size=0xee68},
+	{name=".data", start=0x0x7ff808a1b000, size=0x600},
+	{name=".pdata", start=0x0x7ff808a1c000, size=0x3dbc},
+	{name=".rsrc", start=0x0x7ff808a20000, size=0x3d8},
+	{name=".reloc", start=0x0x7ff808a21000, size=0x14},
+}
+"C:\Windows\System32\gdi32full.dll" {
+	{name=".text", start=0x0x7ff8088e1000, size=0xa3726},
+	{name=".rdata", start=0x0x7ff808985000, size=0x4e1da},
+	{name=".data", start=0x0x7ff8089d4000, size=0x459c},
+	{name=".pdata", start=0x0x7ff8089d9000, size=0x6ff0},
+	{name=".didat", start=0x0x7ff8089e0000, size=0x110},
+	{name=".rsrc", start=0x0x7ff8089e1000, size=0x119c8},
+	{name=".reloc", start=0x0x7ff8089f3000, size=0x14a4},
+}
+"C:\Windows\System32\USER32.dll" {
+	{name=".text", start=0x0x7ff808de1000, size=0x8dcb0},
+	{name=".rdata", start=0x0x7ff808e6f000, size=0x2059c},
+	{name=".data", start=0x0x7ff808e90000, size=0x1e5e},
+	{name=".pdata", start=0x0x7ff808e92000, size=0x6e64},
+	{name=".didat", start=0x0x7ff808e99000, size=0xf0},
+	{name=".rsrc", start=0x0x7ff808e9a000, size=0xe11a0},
+	{name=".reloc", start=0x0x7ff808f7c000, size=0x418},
+}
+"C:\Windows\System32\WS2_32.dll" {
+	{name=".text", start=0x0x7ff809df1000, size=0x40304},
+	{name=".wpp_sf", start=0x0x7ff809e32000, size=0x2f32},
+	{name=".rdata", start=0x0x7ff809e35000, size=0xcf12},
+	{name=".data", start=0x0x7ff809e42000, size=0xab4},
+	{name=".pdata", start=0x0x7ff809e43000, size=0x30cc},
+	{name=".didat", start=0x0x7ff809e47000, size=0x90},
+	{name=".rsrc", start=0x0x7ff809e48000, size=0x11300},
+	{name=".reloc", start=0x0x7ff809e5a000, size=0x150},
+}
+"C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_5.82.19041.1110_none_792d1c772443f647\COMCTL32.dll" {
+	{name=".text", start=0x0x7ffffbd51000, size=0x88adb},
+	{name=".rdata", start=0x0x7ffffbdda000, size=0xc5c4},
+	{name=".data", start=0x0x7ffffbde7000, size=0x38a0},
+	{name=".pdata", start=0x0x7ffffbdeb000, size=0x45cc},
+	{name=".rsrc", start=0x0x7ffffbdf0000, size=0xe2a8},
+	{name=".reloc", start=0x0x7ffffbdff000, size=0x2c8},
+}
+"F:\Bareos\libgcc_s_seh-1.dll" {
+	{name=".text", start=0x0x7ffffd1d1000, size=0xeb80},
+	{name=".data", start=0x0x7ffffd1e0000, size=0x70},
+	{name=".rdata", start=0x0x7ffffd1e1000, size=0x2990},
+	{name=".pdata", start=0x0x7ffffd1e4000, size=0x840},
+	{name=".xdata", start=0x0x7ffffd1e5000, size=0x710},
+	{name=".bss", start=0x0x7ffffd1e6000, size=0x150},
+	{name=".edata", start=0x0x7ffffd1e7000, size=0xafe},
+	{name=".idata", start=0x0x7ffffd1e8000, size=0x5e8},
+	{name=".CRT", start=0x0x7ffffd1e9000, size=0x58},
+	{name=".tls", start=0x0x7ffffd1ea000, size=0x10},
+	{name=".reloc", start=0x0x7ffffd1eb000, size=0x60},
+	{name="/4", start=0x0x7ffffd1ec000, size=0x14d0},
+	{name="/19", start=0x0x7ffffd1ee000, size=0x22814},
+	{name="/31", start=0x0x7ffffd211000, size=0x64c6},
+	{name="/45", start=0x0x7ffffd218000, size=0xda1e},
+	{name="/57", start=0x0x7ffffd226000, size=0x3050},
+	{name="/70", start=0x0x7ffffd22a000, size=0x454},
+	{name="/81", start=0x0x7ffffd22b000, size=0x94d},
+	{name="/92", start=0x0x7ffffd22c000, size=0x110},
+	{name="/106", start=0x0x7ffffd22d000, size=0x7361},
+	{name="/122", start=0x0x7ffffd235000, size=0x11327},
+	{name="/138", start=0x0x7ffffd247000, size=0x186f},
+}
+"F:\Bareos\libwinpthread-1.dll" {
+	{name=".text", start=0x0x7ff805801000, size=0x82c8},
+	{name=".data", start=0x0x7ff80580a000, size=0xc0},
+	{name=".rdata", start=0x0x7ff80580b000, size=0xc80},
+	{name=".pdata", start=0x0x7ff80580c000, size=0xa38},
+	{name=".xdata", start=0x0x7ff80580d000, size=0x898},
+	{name=".bss", start=0x0x7ff80580e000, size=0x190},
+	{name=".edata", start=0x0x7ff80580f000, size=0x111f},
+	{name=".idata", start=0x0x7ff805811000, size=0xc0c},
+	{name=".CRT", start=0x0x7ff805812000, size=0x60},
+	{name=".tls", start=0x0x7ff805813000, size=0x10},
+	{name=".rsrc", start=0x0x7ff805814000, size=0x450},
+	{name=".reloc", start=0x0x7ff805815000, size=0x60},
+	{name="/4", start=0x0x7ff805816000, size=0x20},
+}
+"F:\Bareos\libstdc++-6.dll" {
+	{name=".text", start=0x0x7ffffa9a1000, size=0x114f88},
+	{name=".data", start=0x0x7ffffaab6000, size=0x39b0},
+	{name=".rdata", start=0x0x7ffffaaba000, size=0x37620},
+	{name=".pdata", start=0x0x7ffffaaf2000, size=0xf708},
+	{name=".xdata", start=0x0x7ffffab02000, size=0x1756c},
+	{name=".bss", start=0x0x7ffffab1a000, size=0xc00},
+	{name=".edata", start=0x0x7ffffab1b000, size=0x55964},
+	{name=".idata", start=0x0x7ffffab71000, size=0x1748},
+	{name=".CRT", start=0x0x7ffffab73000, size=0x58},
+	{name=".tls", start=0x0x7ffffab74000, size=0x10},
+	{name=".reloc", start=0x0x7ffffab75000, size=0x1ef0},
+	{name="/4", start=0x0x7ffffab77000, size=0x157e0},
+	{name="/19", start=0x0x7ffffab8d000, size=0xbc8a3a},
+	{name="/31", start=0x0x7ffffb756000, size=0x5af43},
+	{name="/45", start=0x0x7ffffb7b1000, size=0x16c423},
+	{name="/57", start=0x0x7ffffb91e000, size=0x63660},
+	{name="/70", start=0x0x7ffffb982000, size=0x25947},
+	{name="/81", start=0x0x7ffffb9a8000, size=0x94d},
+	{name="/92", start=0x0x7ffffb9a9000, size=0x110},
+	{name="/106", start=0x0x7ffffb9aa000, size=0x314d3},
+	{name="/122", start=0x0x7ffffb9dc000, size=0x2df97b},
+	{name="/138", start=0x0x7ffffbcbc000, size=0x892cc},
+}
+"F:\Bareos\libcrypto-1_1-x64.dll" {
+	{name=".text", start=0x0x7ffffcd01000, size=0x1c22b8},
+	{name=".data", start=0x0x7ffffcec4000, size=0x3880},
+	{name=".rdata", start=0x0x7ffffcec8000, size=0x7f880},
+	{name=".pdata", start=0x0x7ffffcf48000, size=0x13e60},
+	{name=".xdata", start=0x0x7ffffcf5c000, size=0x10758},
+	{name=".bss", start=0x0x7ffffcf6d000, size=0x4da0},
+	{name=".edata", start=0x0x7ffffcf72000, size=0x203e9},
+	{name=".idata", start=0x0x7ffffcf93000, size=0x1994},
+	{name=".CRT", start=0x0x7ffffcf95000, size=0x58},
+	{name=".tls", start=0x0x7ffffcf96000, size=0x10},
+	{name=".rsrc", start=0x0x7ffffcf97000, size=0x3b8},
+	{name=".reloc", start=0x0x7ffffcf98000, size=0x55dc},
+	{name="/4", start=0x0x7ffffcf9e000, size=0x20},
+}
+"F:\Bareos\libjansson-4.dll" {
+	{name=".text", start=0x0x7ffffe211000, size=0x10de8},
+	{name=".data", start=0x0x7ffffe222000, size=0x100},
+	{name=".rdata", start=0x0x7ffffe223000, size=0x2020},
+	{name=".pdata", start=0x0x7ffffe226000, size=0xaf8},
+	{name=".xdata", start=0x0x7ffffe227000, size=0xa10},
+	{name=".bss", start=0x0x7ffffe228000, size=0xc10},
+	{name=".edata", start=0x0x7ffffe229000, size=0x73a},
+	{name=".idata", start=0x0x7ffffe22a000, size=0x8d8},
+	{name=".CRT", start=0x0x7ffffe22b000, size=0x58},
+	{name=".tls", start=0x0x7ffffe22c000, size=0x10},
+	{name=".reloc", start=0x0x7ffffe22d000, size=0x88},
+	{name="/4", start=0x0x7ffffe22e000, size=0x1c},
+}
+"F:\Bareos\zlib1.dll" {
+	{name=".text", start=0x0x7ffffd151000, size=0x132a8},
+	{name=".data", start=0x0x7ffffd165000, size=0xa0},
+	{name=".rdata", start=0x0x7ffffd166000, size=0x5840},
+	{name=".pdata", start=0x0x7ffffd16c000, size=0xa08},
+	{name=".xdata", start=0x0x7ffffd16d000, size=0x954},
+	{name=".bss", start=0x0x7ffffd16e000, size=0xb10},
+	{name=".edata", start=0x0x7ffffd16f000, size=0x8e1},
+	{name=".idata", start=0x0x7ffffd170000, size=0x618},
+	{name=".CRT", start=0x0x7ffffd171000, size=0x58},
+	{name=".tls", start=0x0x7ffffd172000, size=0x10},
+	{name=".reloc", start=0x0x7ffffd173000, size=0xa8},
+	{name="/4", start=0x0x7ffffd174000, size=0x14},
+}
+"F:\Bareos\libssl-1_1-x64.dll" {
+	{name=".text", start=0x0x7ffffcc71000, size=0x55a28},
+	{name=".data", start=0x0x7ffffccc7000, size=0x3f10},
+	{name=".rdata", start=0x0x7ffffcccb000, size=0x14ef0},
+	{name=".pdata", start=0x0x7ffffcce0000, size=0x3c6c},
+	{name=".xdata", start=0x0x7ffffcce4000, size=0x3128},
+	{name=".bss", start=0x0x7ffffcce8000, size=0xd10},
+	{name=".edata", start=0x0x7ffffcce9000, size=0x408a},
+	{name=".idata", start=0x0x7ffffccee000, size=0x4e40},
+	{name=".CRT", start=0x0x7ffffccf3000, size=0x58},
+	{name=".tls", start=0x0x7ffffccf4000, size=0x10},
+	{name=".rsrc", start=0x0x7ffffccf5000, size=0x3b0},
+	{name=".reloc", start=0x0x7ffffccf6000, size=0x13d8},
+	{name="/4", start=0x0x7ffffccf8000, size=0x20},
+}
+"F:\Bareos\libssp-0.dll" {
+	{name=".text", start=0x0x7ffffd1b1000, size=0x1970},
+	{name=".data", start=0x0x7ffffd1b3000, size=0x70},
+	{name=".rdata", start=0x0x7ffffd1b4000, size=0xb50},
+	{name=".pdata", start=0x0x7ffffd1b5000, size=0x27c},
+	{name=".xdata", start=0x0x7ffffd1b6000, size=0x1f4},
+	{name=".bss", start=0x0x7ffffd1b7000, size=0x110},
+	{name=".edata", start=0x0x7ffffd1b8000, size=0x169},
+	{name=".idata", start=0x0x7ffffd1b9000, size=0x558},
+	{name=".CRT", start=0x0x7ffffd1ba000, size=0x58},
+	{name=".tls", start=0x0x7ffffd1bb000, size=0x10},
+	{name=".reloc", start=0x0x7ffffd1bc000, size=0x60},
+	{name="/4", start=0x0x7ffffd1bd000, size=0x330},
+	{name="/19", start=0x0x7ffffd1be000, size=0x4de9},
+	{name="/31", start=0x0x7ffffd1c3000, size=0x10cc},
+	{name="/45", start=0x0x7ffffd1c5000, size=0xec1},
+	{name="/57", start=0x0x7ffffd1c6000, size=0x758},
+	{name="/70", start=0x0x7ffffd1c7000, size=0xb6},
+	{name="/81", start=0x0x7ffffd1c8000, size=0x94d},
+	{name="/92", start=0x0x7ffffd1c9000, size=0x110},
+	{name="/106", start=0x0x7ffffd1ca000, size=0x12cd},
+	{name="/122", start=0x0x7ffffd1cc000, size=0xa1d},
+	{name="/138", start=0x0x7ffffd1cd000, size=0x9e},
+}
+"F:\Bareos\liblzo2-2.dll" {
+	{name=".text", start=0x0x7ffffd181000, size=0x1c958},
+	{name=".data", start=0x0x7ffffd19e000, size=0x70},
+	{name=".rdata", start=0x0x7ffffd19f000, size=0x2350},
+	{name=".pdata", start=0x0x7ffffd1a2000, size=0x888},
+	{name=".xdata", start=0x0x7ffffd1a3000, size=0x988},
+	{name=".bss", start=0x0x7ffffd1a4000, size=0x110},
+	{name=".edata", start=0x0x7ffffd1a5000, size=0xd85},
+	{name=".idata", start=0x0x7ffffd1a6000, size=0x3dc},
+	{name=".CRT", start=0x0x7ffffd1a7000, size=0x58},
+	{name=".tls", start=0x0x7ffffd1a8000, size=0x10},
+	{name=".reloc", start=0x0x7ffffd1a9000, size=0xb0},
+	{name="/4", start=0x0x7ffffd1aa000, size=0x18},
+}
+"F:\Bareos\libbareoslmdb.dll" {
+	{name=".text", start=0x0x7ffffc911000, size=0x1ad88},
+	{name="text_env", start=0x0x7ffffc92c000, size=0x4394},
+	{name=".data", start=0x0x7ffffc931000, size=0xb0},
+	{name=".rdata", start=0x0x7ffffc932000, size=0x1950},
+	{name=".pdata", start=0x0x7ffffc934000, size=0xbc4},
+	{name=".xdata", start=0x0x7ffffc935000, size=0xb1c},
+	{name=".bss", start=0x0x7ffffc936000, size=0xc90},
+	{name=".edata", start=0x0x7ffffc937000, size=0x730},
+	{name=".idata", start=0x0x7ffffc938000, size=0xc6c},
+	{name=".CRT", start=0x0x7ffffc939000, size=0x60},
+	{name=".tls", start=0x0x7ffffc93a000, size=0x10},
+	{name=".reloc", start=0x0x7ffffc93b000, size=0x9c},
+	{name="/4", start=0x0x7ffffc93c000, size=0x3d0},
+	{name="/19", start=0x0x7ffffc93d000, size=0xd4b6},
+	{name="/31", start=0x0x7ffffc94b000, size=0xb99},
+	{name="/45", start=0x0x7ffffc94c000, size=0x899d},
+	{name="/57", start=0x0x7ffffc955000, size=0x2780},
+	{name="/70", start=0x0x7ffffc958000, size=0x24c},
+	{name="/81", start=0x0x7ffffc959000, size=0x94d},
+	{name="/92", start=0x0x7ffffc95a000, size=0x110},
+	{name="/106", start=0x0x7ffffc95b000, size=0x1398},
+	{name="/122", start=0x0x7ffffc95d000, size=0x13bee2},
+	{name="/135", start=0x0x7ffffca99000, size=0x47f},
+}
+"F:\Bareos\libbareosfind.dll" {
+	{name=".text", start=0x0x7ffff68d1000, size=0x175e0},
+	{name=".data", start=0x0x7ffff68e9000, size=0xb0},
+	{name=".rdata", start=0x0x7ffff68ea000, size=0x34a4},
+	{name=".pdata", start=0x0x7ffff68ee000, size=0x153c},
+	{name=".xdata", start=0x0x7ffff68f0000, size=0x16d8},
+	{name=".bss", start=0x0x7ffff68f2000, size=0xbb0},
+	{name=".edata", start=0x0x7ffff68f3000, size=0x6c4a},
+	{name=".idata", start=0x0x7ffff68fa000, size=0x21c4},
+	{name=".CRT", start=0x0x7ffff68fd000, size=0x58},
+	{name=".tls", start=0x0x7ffff68fe000, size=0x10},
+	{name=".reloc", start=0x0x7ffff68ff000, size=0x8c},
+	{name="/4", start=0x0x7ffff6900000, size=0x16a0},
+	{name="/19", start=0x0x7ffff6902000, size=0xde363},
+	{name="/31", start=0x0x7ffff69e1000, size=0xa0c6},
+	{name="/45", start=0x0x7ffff69ec000, size=0x103d3},
+	{name="/57", start=0x0x7ffff69fd000, size=0x65e8},
+	{name="/70", start=0x0x7ffff6a04000, size=0x4079},
+	{name="/81", start=0x0x7ffff6a09000, size=0x94d},
+	{name="/92", start=0x0x7ffff6a0a000, size=0x110},
+	{name="/106", start=0x0x7ffff6a0b000, size=0x19069},
+	{name="/122", start=0x0x7ffff6a25000, size=0x11dc09e},
+	{name="/135", start=0x0x7ffff7c02000, size=0xe8d},
+}
+"C:\Windows\SYSTEM32\CRYPTSP.dll" {
+	{name=".text", start=0x0x7ff807ae1000, size=0xb2c1},
+	{name=".rdata", start=0x0x7ff807aed000, size=0x5234},
+	{name=".data", start=0x0x7ff807af3000, size=0x8a8},
+	{name=".pdata", start=0x0x7ff807af4000, size=0x984},
+	{name=".didat", start=0x0x7ff807af5000, size=0x88},
+	{name=".rsrc", start=0x0x7ff807af6000, size=0x4b8},
+	{name=".reloc", start=0x0x7ff807af7000, size=0x13c},
+}
+"C:\Windows\system32\rsaenh.dll" {
+	{name=".text", start=0x0x7ff8071d1000, size=0x22bf5},
+	{name=".rdata", start=0x0x7ff8071f4000, size=0x76ee},
+	{name=".data", start=0x0x7ff8071fc000, size=0xe0c},
+	{name=".pdata", start=0x0x7ff8071fd000, size=0xe94},
+	{name=".didat", start=0x0x7ff8071fe000, size=0xb8},
+	{name=".rsrc", start=0x0x7ff8071ff000, size=0x3ec0},
+	{name=".reloc", start=0x0x7ff807203000, size=0x9c},
+}
+"C:\Windows\System32\bcrypt.dll" {
+	{name=".text", start=0x0x7ff808771000, size=0x192ea},
+	{name=".rdata", start=0x0x7ff80878b000, size=0x57e8},
+	{name=".data", start=0x0x7ff808791000, size=0x9f8},
+	{name=".pdata", start=0x0x7ff808792000, size=0x1254},
+	{name=".didat", start=0x0x7ff808794000, size=0x48},
+	{name=".rsrc", start=0x0x7ff808795000, size=0xaf0},
+	{name=".reloc", start=0x0x7ff808796000, size=0x10c},
+}
+"C:\Windows\SYSTEM32\CRYPTBASE.dll" {
+	{name=".text", start=0x0x7ff807ad1000, size=0x28a3},
+	{name=".rdata", start=0x0x7ff807ad4000, size=0x2314},
+	{name=".data", start=0x0x7ff807ad7000, size=0x628},
+	{name=".pdata", start=0x0x7ff807ad8000, size=0x288},
+	{name=".didat", start=0x0x7ff807ad9000, size=0x60},
+	{name=".rsrc", start=0x0x7ff807ada000, size=0x410},
+	{name=".reloc", start=0x0x7ff807adb000, size=0x38},
+}
+"C:\Windows\System32\bcryptPrimitives.dll" {
+	{name=".text", start=0x0x7ff808851000, size=0x63b2a},
+	{name=".rdata", start=0x0x7ff8088b5000, size=0x155b0},
+	{name=".data", start=0x0x7ff8088cb000, size=0x9d0},
+	{name=".pdata", start=0x0x7ff8088cc000, size=0x3054},
+	{name=".rsrc", start=0x0x7ff8088d0000, size=0x448},
+	{name=".reloc", start=0x0x7ff8088d1000, size=0x498},
+}
+"C:\Windows\SYSTEM32\DBGHELP.DLL" {
+	{name=".text", start=0x0x7fffee101000, size=0x155c3c},
+	{name=".rdata", start=0x0x7fffee257000, size=0x4b5ae},
+	{name=".data", start=0x0x7fffee2a3000, size=0x24373},
+	{name=".pdata", start=0x0x7fffee2c8000, size=0x1161c},
+	{name=".didat", start=0x0x7fffee2da000, size=0x10},
+	{name=".mrdata", start=0x0x7fffee2db000, size=0x2d20},
+	{name=".rsrc", start=0x0x7fffee2de000, size=0xb50},
+	{name=".reloc", start=0x0x7fffee2df000, size=0x4ce0},
+}
+"C:\Windows\System32\SHELL32.DLL" {
+	{name=".text", start=0x0x7ff809571000, size=0x588a49},
+	{name=".rdata", start=0x0x7ff809afa000, size=0x148774},
+	{name=".data", start=0x0x7ff809c43000, size=0x91d8},
+	{name=".pdata", start=0x0x7ff809c4d000, size=0x463b0},
+	{name=".didat", start=0x0x7ff809c94000, size=0x2f10},
+	{name=".rsrc", start=0x0x7ff809c97000, size=0x85a8},
+	{name=".reloc", start=0x0x7ff809ca0000, size=0x130f0},
+}
+"C:\Windows\system32\napinsp.dll" {
+	{name=".text", start=0x0x7ffffcbf1000, size=0xc388},
+	{name=".rdata", start=0x0x7ffffcbfe000, size=0x347a},
+	{name=".data", start=0x0x7ffffcc02000, size=0x788},
+	{name=".pdata", start=0x0x7ffffcc03000, size=0x7d4},
+	{name=".didat", start=0x0x7ffffcc04000, size=0x40},
+	{name=".rsrc", start=0x0x7ffffcc05000, size=0x520},
+	{name=".reloc", start=0x0x7ffffcc06000, size=0xec},
+}
+"C:\Windows\system32\pnrpnsp.dll" {
+	{name=".text", start=0x0x7ffffcbd1000, size=0x10052},
+	{name=".rdata", start=0x0x7ffffcbe2000, size=0x3d04},
+	{name=".data", start=0x0x7ffffcbe6000, size=0xa24},
+	{name=".pdata", start=0x0x7ffffcbe7000, size=0xa14},
+	{name=".didat", start=0x0x7ffffcbe8000, size=0x90},
+	{name=".rsrc", start=0x0x7ffffcbe9000, size=0x518},
+	{name=".reloc", start=0x0x7ffffcbea000, size=0x18c},
+}
+"C:\Windows\system32\wshbth.dll" {
+	{name=".text", start=0x0x7fffebc81000, size=0x89c0},
+	{name="PAGE", start=0x0x7fffebc8a000, size=0x1ddb},
+	{name=".rdata", start=0x0x7fffebc8c000, size=0x375c},
+	{name=".data", start=0x0x7fffebc90000, size=0xc10},
+	{name=".pdata", start=0x0x7fffebc91000, size=0x5ac},
+	{name=".didat", start=0x0x7fffebc92000, size=0x40},
+	{name=".rsrc", start=0x0x7fffebc93000, size=0x408},
+	{name=".reloc", start=0x0x7fffebc94000, size=0x1b4},
+}
+"C:\Windows\system32\NLAapi.dll" {
+	{name=".text", start=0x0x7ff803b51000, size=0x10b41},
+	{name=".rdata", start=0x0x7ff803b62000, size=0x4d44},
+	{name=".data", start=0x0x7ff803b67000, size=0x960},
+	{name=".pdata", start=0x0x7ff803b68000, size=0x1020},
+	{name=".didat", start=0x0x7ff803b6a000, size=0x18},
+	{name=".rsrc", start=0x0x7ff803b6b000, size=0x408},
+	{name=".reloc", start=0x0x7ff803b6c000, size=0x130},
+}
+"C:\Windows\SYSTEM32\IPHLPAPI.DLL" {
+	{name=".text", start=0x0x7ff8075d1000, size=0x298ab},
+	{name=".rdata", start=0x0x7ff8075fb000, size=0xa30c},
+	{name=".data", start=0x0x7ff807606000, size=0xd8c},
+	{name=".pdata", start=0x0x7ff807607000, size=0x1a70},
+	{name=".didat", start=0x0x7ff807609000, size=0x190},
+	{name=".rsrc", start=0x0x7ff80760a000, size=0x508},
+	{name=".reloc", start=0x0x7ff80760b000, size=0x170},
+}
+"C:\Windows\System32\mswsock.dll" {
+	{name=".text", start=0x0x7ff8078e1000, size=0x36462},
+	{name="SANONTCP", start=0x0x7ff807918000, size=0x1771c},
+	{name=".wpp_sf", start=0x0x7ff807930000, size=0x308b},
+	{name=".rdata", start=0x0x7ff807934000, size=0xdf24},
+	{name=".data", start=0x0x7ff807942000, size=0x1cc8},
+	{name=".pdata", start=0x0x7ff807944000, size=0x2688},
+	{name=".didat", start=0x0x7ff807947000, size=0x80},
+	{name=".rsrc", start=0x0x7ff807948000, size=0x550},
+	{name=".reloc", start=0x0x7ff807949000, size=0x100},
+}
+"C:\Windows\SYSTEM32\DNSAPI.dll" {
+	{name=".text", start=0x0x7ff807611000, size=0x83615},
+	{name=".wpp_sf", start=0x0x7ff807695000, size=0xdc1b},
+	{name=".rdata", start=0x0x7ff8076a3000, size=0x21664},
+	{name=".data", start=0x0x7ff8076c5000, size=0x18d0},
+	{name=".pdata", start=0x0x7ff8076c7000, size=0x747c},
+	{name=".didat", start=0x0x7ff8076cf000, size=0x2d8},
+	{name=".rsrc", start=0x0x7ff8076d0000, size=0x8548},
+	{name=".reloc", start=0x0x7ff8076d9000, size=0xe24},
+}
+"C:\Windows\System32\NSI.dll" {
+	{name=".text", start=0x0x7ff809e91000, size=0x1d66},
+	{name=".rdata", start=0x0x7ff809e93000, size=0xfac},
+	{name=".data", start=0x0x7ff809e94000, size=0x618},
+	{name=".pdata", start=0x0x7ff809e95000, size=0x258},
+	{name=".rsrc", start=0x0x7ff809e96000, size=0x3f8},
+	{name=".reloc", start=0x0x7ff809e97000, size=0x18},
+}
+"C:\Windows\System32\winrnr.dll" {
+	{name=".text", start=0x0x7ffffcbb1000, size=0x60ed},
+	{name=".wpp_sf", start=0x0x7ffffcbb8000, size=0x1d39},
+	{name=".rdata", start=0x0x7ffffcbba000, size=0x20b2},
+	{name=".data", start=0x0x7ffffcbbd000, size=0xae8},
+	{name=".pdata", start=0x0x7ffffcbbe000, size=0x93c},
+	{name=".didat", start=0x0x7ffffcbbf000, size=0xe8},
+	{name=".rsrc", start=0x0x7ffffcbc0000, size=0x450},
+	{name=".reloc", start=0x0x7ffffcbc1000, size=0x78},
+}
+"C:\Windows\SYSTEM32\windows.storage.dll" {
+	{name=".text", start=0x0x7ff8062a1000, size=0x58cd61},
+	{name=".rdata", start=0x0x7ff80682e000, size=0x183fda},
+	{name=".data", start=0x0x7ff8069b2000, size=0x83ec},
+	{name=".pdata", start=0x0x7ff8069bb000, size=0x5163c},
+	{name=".didat", start=0x0x7ff806a0d000, size=0x2048},
+	{name=".rsrc", start=0x0x7ff806a10000, size=0x3498},
+	{name=".reloc", start=0x0x7ff806a14000, size=0x1e288},
+}
+"C:\Windows\SYSTEM32\Wldp.dll" {
+	{name=".text", start=0x0x7ff807b81000, size=0x171ca},
+	{name=".rdata", start=0x0x7ff807b99000, size=0xd500},
+	{name=".data", start=0x0x7ff807ba7000, size=0xe88},
+	{name=".pdata", start=0x0x7ff807ba8000, size=0x16b0},
+	{name=".didat", start=0x0x7ff807baa000, size=0x190},
+	{name=".rsrc", start=0x0x7ff807bab000, size=0x1ed8},
+	{name=".reloc", start=0x0x7ff807bad000, size=0x4a8},
+}
+"C:\Windows\System32\SHCORE.dll" {
+	{name=".text", start=0x0x7ff80a141000, size=0x744a0},
+	{name=".rdata", start=0x0x7ff80a1b6000, size=0x25512},
+	{name=".data", start=0x0x7ff80a1dc000, size=0x14a0},
+	{name=".pdata", start=0x0x7ff80a1de000, size=0x8d84},
+	{name=".didat", start=0x0x7ff80a1e7000, size=0x408},
+	{name=".rsrc", start=0x0x7ff80a1e8000, size=0x4f0},
+	{name=".reloc", start=0x0x7ff80a1e9000, size=0x336c},
+}
+"C:\Windows\System32\shlwapi.dll" {
+	{name=".text", start=0x0x7ff808c61000, size=0x2c8ad},
+	{name=".rdata", start=0x0x7ff808c8e000, size=0x1f292},
+	{name=".data", start=0x0x7ff808cae000, size=0xf70},
+	{name=".pdata", start=0x0x7ff808caf000, size=0x24c0},
+	{name=".didat", start=0x0x7ff808cb2000, size=0x968},
+	{name=".rsrc", start=0x0x7ff808cb3000, size=0xd98},
+	{name=".reloc", start=0x0x7ff808cb4000, size=0x72c},
+}
+"C:\Windows\SYSTEM32\profapi.dll" {
+	{name=".text", start=0x0x7ff808151000, size=0x10ab3},
+	{name=".rdata", start=0x0x7ff808162000, size=0x6e98},
+	{name=".data", start=0x0x7ff808169000, size=0xa44},
+	{name=".pdata", start=0x0x7ff80816a000, size=0x1398},
+	{name=".didat", start=0x0x7ff80816c000, size=0x88},
+	{name=".rsrc", start=0x0x7ff80816d000, size=0x400},
+	{name=".reloc", start=0x0x7ff80816e000, size=0xa0},
+}
+"C:\Windows\System32\fwpuclnt.dll" {
+	{name=".text", start=0x0x7fffff8c1000, size=0x466bd},
+	{name=".rdata", start=0x0x7fffff908000, size=0x2e020},
+	{name=".data", start=0x0x7fffff937000, size=0xcfc},
+	{name=".pdata", start=0x0x7fffff938000, size=0x4848},
+	{name=".didat", start=0x0x7fffff93d000, size=0xf8},
+	{name=".rsrc", start=0x0x7fffff93e000, size=0x1370},
+	{name=".reloc", start=0x0x7fffff940000, size=0x155c},
+}
+"C:\Windows\System32\rasadhlp.dll" {
+	{name=".text", start=0x0x7ffffef91000, size=0x1a7d},
+	{name=".rdata", start=0x0x7ffffef93000, size=0x13de},
+	{name=".data", start=0x0x7ffffef95000, size=0x678},
+	{name=".pdata", start=0x0x7ffffef96000, size=0x210},
+	{name=".didat", start=0x0x7ffffef97000, size=0x10},
+	{name=".rsrc", start=0x0x7ffffef98000, size=0x410},
+	{name=".reloc", start=0x0x7ffffef99000, size=0x2c},
+}
+"C:\Windows\SYSTEM32\VSSAPI.DLL" {
+	{name=".text", start=0x0x7fffff641000, size=0x107ed3},
+	{name=".rdata", start=0x0x7fffff749000, size=0x64514},
+	{name=".data", start=0x0x7fffff7ae000, size=0x1ae0},
+	{name=".pdata", start=0x0x7fffff7b0000, size=0x942c},
+	{name=".didat", start=0x0x7fffff7ba000, size=0x260},
+	{name=".rsrc", start=0x0x7fffff7bb000, size=0x21770},
+	{name=".reloc", start=0x0x7fffff7dd000, size=0x718},
+}
+"C:\Windows\SYSTEM32\VssTrace.DLL" {
+	{name=".text", start=0x0x7fffff621000, size=0x93b7},
+	{name=".rdata", start=0x0x7fffff62b000, size=0x620e},
+	{name=".data", start=0x0x7fffff632000, size=0x1190},
+	{name=".pdata", start=0x0x7fffff634000, size=0xb28},
+	{name=".didat", start=0x0x7fffff635000, size=0x58},
+	{name=".rsrc", start=0x0x7fffff636000, size=0x560},
+	{name=".reloc", start=0x0x7fffff637000, size=0x94},
+}
+"C:\Windows\SYSTEM32\kernel.appcore.dll" {
+	{name=".text", start=0x0x7ff8060a1000, size=0x3fc8},
+	{name=".rdata", start=0x0x7ff8060a5000, size=0x71c4},
+	{name=".data", start=0x0x7ff8060ad000, size=0x658},
+	{name=".pdata", start=0x0x7ff8060ae000, size=0x4ec},
+	{name=".didat", start=0x0x7ff8060af000, size=0x18},
+	{name=".rsrc", start=0x0x7ff8060b0000, size=0x410},
+	{name=".reloc", start=0x0x7ff8060b1000, size=0x8c},
+}
+"C:\Windows\System32\clbcatq.dll" {
+	{name=".text", start=0x0x7ff80a371000, size=0x6ad35},
+	{name=".rdata", start=0x0x7ff80a3dc000, size=0x2c070},
+	{name=".data", start=0x0x7ff80a409000, size=0x5330},
+	{name=".pdata", start=0x0x7ff80a40f000, size=0x4530},
+	{name=".didat", start=0x0x7ff80a414000, size=0x100},
+	{name=".rsrc", start=0x0x7ff80a415000, size=0x1f00},
+	{name=".reloc", start=0x0x7ff80a417000, size=0x1bbc},
+}
+"C:\Windows\SYSTEM32\DSROLE.dll" {
+	{name=".text", start=0x0x7ff803af1000, size=0x1d2d},
+	{name=".rdata", start=0x0x7ff803af3000, size=0x1c9e},
+	{name=".data", start=0x0x7ff803af5000, size=0x6c8},
+	{name=".pdata", start=0x0x7ff803af6000, size=0x27c},
+	{name=".didat", start=0x0x7ff803af7000, size=0x38},
+	{name=".rsrc", start=0x0x7ff803af8000, size=0x3f8},
+	{name=".reloc", start=0x0x7ff803af9000, size=0x70},
+}
+"C:\Windows\System32\msxml3.dll" {
+	{name=".text", start=0x0x7ffff0491000, size=0x124d5d},
+	{name=".rdata", start=0x0x7ffff05b6000, size=0x438e6},
+	{name=".data", start=0x0x7ffff05fa000, size=0x6f8e0},
+	{name=".pdata", start=0x0x7ffff066a000, size=0x11154},
+	{name=".didat", start=0x0x7ffff067c000, size=0x318},
+	{name=".rsrc", start=0x0x7ffff067d000, size=0x17a00},
+	{name=".reloc", start=0x0x7ffff0695000, size=0x66a4},
+}
+"C:\Windows\system32\vss_ps.dll" {
+	{name=".text", start=0x0x7ffffe851000, size=0x10b5},
+	{name=".rdata", start=0x0x7ffffe853000, size=0xc13a},
+	{name=".data", start=0x0x7ffffe860000, size=0x668},
+	{name=".pdata", start=0x0x7ffffe861000, size=0x108},
+	{name=".rsrc", start=0x0x7ffffe862000, size=0x430},
+	{name=".reloc", start=0x0x7ffffe863000, size=0xfb0},
+}
+"C:\Windows\System32\ES.DLL" {
+	{name=".text", start=0x0x7ff8010a1000, size=0x3b8d5},
+	{name=".rdata", start=0x0x7ff8010dd000, size=0x1cb14},
+	{name=".data", start=0x0x7ff8010fa000, size=0x30e0},
+	{name=".pdata", start=0x0x7ff8010fe000, size=0x453c},
+	{name=".didat", start=0x0x7ff801103000, size=0x2e0},
+	{name=".rsrc", start=0x0x7ff801104000, size=0x5900},
+	{name=".reloc", start=0x0x7ff80110a000, size=0x19e4},
+}
+"C:\Windows\SYSTEM32\sxs.dll" {
+	{name=".text", start=0x0x7ff807f31000, size=0x67a5b},
+	{name=".rdata", start=0x0x7ff807f99000, size=0x2d8d2},
+	{name=".data", start=0x0x7ff807fc7000, size=0x9a8},
+	{name=".pdata", start=0x0x7ff807fc8000, size=0x4cec},
+	{name=".didat", start=0x0x7ff807fcd000, size=0x30},
+	{name=".rsrc", start=0x0x7ff807fce000, size=0x4f0},
+	{name=".reloc", start=0x0x7ff807fcf000, size=0x2a60},
+}
+"C:\Windows\System32\PROPSYS.dll" {
+	{name=".text", start=0x0x7ff803d41000, size=0x9a153},
+	{name=".rdata", start=0x0x7ff803ddc000, size=0x460ee},
+	{name=".data", start=0x0x7ff803e23000, size=0x147c},
+	{name=".pdata", start=0x0x7ff803e25000, size=0x9dc8},
+	{name=".didat", start=0x0x7ff803e2f000, size=0x688},
+	{name=".rsrc", start=0x0x7ff803e30000, size=0x9d0},
+	{name=".reloc", start=0x0x7ff803e31000, size=0x4b4c},
+}
+"C:\Windows\SYSTEM32\samcli.dll" {
+	{name=".text", start=0x0x7ffffe541000, size=0xefe1},
+	{name=".rdata", start=0x0x7ffffe550000, size=0x3862},
+	{name=".data", start=0x0x7ffffe554000, size=0x6e8},
+	{name=".pdata", start=0x0x7ffffe555000, size=0x744},
+	{name=".didat", start=0x0x7ffffe556000, size=0x230},
+	{name=".rsrc", start=0x0x7ffffe557000, size=0x418},
+	{name=".reloc", start=0x0x7ffffe558000, size=0xac},
+}
+"C:\Windows\SYSTEM32\netutils.dll" {
+	{name=".text", start=0x0x7ff8076e1000, size=0x4a32},
+	{name=".rdata", start=0x0x7ff8076e6000, size=0x1f88},
+	{name=".data", start=0x0x7ff8076e8000, size=0x7a8},
+	{name=".pdata", start=0x0x7ff8076e9000, size=0x5f4},
+	{name=".rsrc", start=0x0x7ff8076ea000, size=0x408},
+	{name=".reloc", start=0x0x7ff8076eb000, size=0x2c},
+}
+"C:\Windows\SYSTEM32\SAMLIB.dll" {
+	{name=".text", start=0x0x7ff803e41000, size=0x1353f},
+	{name=".rdata", start=0x0x7ff803e55000, size=0xc290},
+	{name=".data", start=0x0x7ff803e62000, size=0x778},
+	{name=".pdata", start=0x0x7ff803e63000, size=0xe94},
+	{name=".didat", start=0x0x7ff803e64000, size=0x188},
+	{name=".rsrc", start=0x0x7ff803e65000, size=0x3f0},
+	{name=".reloc", start=0x0x7ff803e66000, size=0x684},
+}
+
